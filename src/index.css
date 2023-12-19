@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #BFCBCE;
+  /* Set your initial background color */
+  color:#303655;
+  /* Set the default text color */
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  /* Align contents to the right */
+  align-items: center;
+  padding: 10px;
+  background-color: #BFCBCE;
+  /* Example background color for the navbar */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin-left: 25px;
+  /* Adjust margin-left instead of margin-right */
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #303655;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+li:hover {
+  cursor: pointer;
+  color: #FFD700;
+  /* Example color for the hovered state */
+}
+
+.typewriter-text {
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 24px;
+  border-right: 2px solid white;
+  display: inline-block;
+}
