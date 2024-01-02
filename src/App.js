@@ -1,20 +1,22 @@
-import React from 'react';
-import NavBar from "./NavBar";
-import Intro from "./Intro";
-import Left from './Left';
+// App.js
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React, { useRef } from 'react';
+import Home from './pages/MainPage';
+import CleanIndia from './pages/CleanIndia';
+import AmazonClone from './pages/AmazonClone';
 
 function App() {
-  const textToType = "I'm Anupriya Front-End Developer";
   return (
-    
     <div className="App">
-      <div>
-        <NavBar />
-      </div>
-      <div>
-        <Left text={textToType} />
-        <Intro />
-      </div>
+      <BrowserRouter>
+        <Routes >
+          <Route index element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/projects/:Clean India Initiative Website" element={<CleanIndia />} />
+          <Route path="/projects/:AmazonClone" element={<AmazonClone />} />
+          <Route path="*" component={<Home />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
